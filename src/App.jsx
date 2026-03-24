@@ -11,6 +11,7 @@ import { SkillsSection } from './components/sections/SkillsSection';
 import { TechStackSection } from './components/sections/TechStackSection';
 import { StatsSection } from './components/sections/StatsSection';
 import { ContactSection } from './components/sections/ContactSection';
+import { LabSection } from './components/sections/LabSection';
 
 import { SpaceBackground } from './components/ui/SpaceBackground';
 import { ParticleBackground } from './components/ui/ParticleBackground';
@@ -29,6 +30,7 @@ function App() {
         <HeroSection />
         <MarqueeSection />
         <ProjectsSection />
+        <LabSection />
         <AboutSection />
         <ExperienceSection />
         <SkillsSection />
