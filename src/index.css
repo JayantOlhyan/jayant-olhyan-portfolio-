@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #080810;
+  --bg-secondary: #0E0E1C;
+  --bg-card: #13132A;
+  --accent-indigo: #6C63FF;
+  --accent-cyan: #00F5FF;
+  --accent-gradient: linear-gradient(135deg, #6C63FF, #00F5FF);
+  --text-primary: #FFFFFF;
+  --text-secondary: #B0B8D0;
+  --text-muted: #6B7594;
+  --border-default: #1E1E3A;
+  --border-accent: rgba(108, 99, 255, 0.4);
+  --glow-indigo: 0 0 30px rgba(108, 99, 255, 0.4);
+  --glow-cyan: 0 0 20px rgba(0, 245, 255, 0.3);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-primary);
+  background-image: radial-gradient(circle at 1px 1px, #1a1a3a 1px, transparent 0);
+  background-size: 32px 32px;
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  cursor: none;
+}
+
+a, button, input, textarea, .interactive {
+  cursor: none !important;
+}
+
+/* 3D Utilities */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+/* Gradient Text utility */
+.text-gradient {
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Custom Scrollbar styled for dark theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-default);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-indigo);
+}

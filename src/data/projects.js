@@ -1,0 +1,68 @@
+export const projects = [
+  {
+    id: 1,
+    title: "Sentinel AI",
+    tagline: "AI-Powered Scam Detection & Digital Safety Platform",
+    categories: ["AI/ML", "Full Stack"],
+    techTags: ["Next.js 14", "TypeScript", "Python FastAPI", "Gemini 2.5 Flash"],
+    liveUrl: "https://sentinel-ai-1.netlify.app",
+    githubUrl: "https://github.com/JayantOlhyan",
+    hackathon: "Hack Paradox 2026",
+    description: "A real-time AI scam and fraud detection tool that analyzes messages, URLs, and digital content. Built with Next.js 14 frontend and Python FastAPI backend, powered by Gemini 2.5 Flash for lightning-fast detection.",
+    bgGradient: "linear-gradient(135deg, #0D0D2B, #1A1A4A)",
+    icon: "ShieldCheck"
+  },
+  {
+    id: 2,
+    title: "GRAVITAS",
+    tagline: "Space Debris & Asteroid Collision Risk Intelligence Platform",
+    categories: ["Full Stack", "React", "APIs"],
+    techTags: ["React", "Node.js", "Three.js", "NASA APIs"],
+    liveUrl: "https://gravitas-1.netlify.app",
+    githubUrl: "https://github.com/JayantOlhyan",
+    hackathon: "Cyber Forge @ Advitiya '26, IIT Ropar",
+    description: "A 3D interactive space risk monitoring platform integrating four NASA APIs with a Three.js globe visualization. Tracks near-Earth objects, solar events, and collision probabilities in real time.",
+    bgGradient: "linear-gradient(135deg, #020214, #0A0A2E)",
+    pattern: "stars",
+    icon: "Globe"
+  },
+  {
+    id: 3,
+    title: "FarmIQ",
+    tagline: "AI-Powered Farmer Intelligence Platform for India",
+    categories: ["AI/ML", "React", "Full Stack"],
+    techTags: ["React 18", "Gemini API", "i18next", "Zustand"],
+    liveUrl: "https://farm-iq.netlify.app",
+    githubUrl: "https://github.com/JayantOlhyan",
+    hackathon: "Elite Hack 1.0 — Team Hack Homies",
+    description: "Dual-mode AI intelligence platform for Indian farmers. Supports two distinct personas, Hindi/Devanagari language with i18next, and AI crop advisory powered by Gemini. Built for rural India.",
+    bgGradient: "linear-gradient(135deg, #0A1A0A, #1B3A1B)",
+    icon: "Leaf"
+  },
+  {
+    id: 4,
+    title: "MSIT College Website",
+    tagline: "Full Redesign of MSIT Delhi's Official College Website",
+    categories: ["Full Stack", "React"],
+    techTags: ["React 18", "Vite", "Tailwind CSS", "React Router v6"],
+    liveUrl: "https://msit-website.netlify.app",
+    githubUrl: "https://github.com/JayantOlhyan/MSIT-",
+    hackathon: "",
+    description: "A complete redesign and rebuild of MSIT Delhi's official college website. Features 30+ subpages powered by a DynamicPage.jsx + pagesData.js architecture. Fully responsive and modern.",
+    bgGradient: "linear-gradient(135deg, #0A0A1E, #1A1A3A)",
+    icon: "Building"
+  },
+  {
+    id: 5,
+    title: "HealthKinator",
+    tagline: "AI-Powered Symptom Checker & Health Prediction App",
+    categories: ["AI/ML", "Full Stack"],
+    techTags: ["TypeScript", "AI/ML", "Predictive Models", "React"],
+    liveUrl: "",
+    githubUrl: "https://github.com/JayantOlhyan/healthkinator-1-",
+    hackathon: "ICIPAI Conference MRIIRS March 2026",
+    description: "AI-powered symptom checker presented at an international conference. Uses predictive AI models to analyze symptoms and suggest possible conditions. Research paper submitted and presented with team at MRIIRS.",
+    bgGradient: "linear-gradient(135deg, #1A0A14, #2D1A2E)",
+    icon: "Activity"
+  }
+];
