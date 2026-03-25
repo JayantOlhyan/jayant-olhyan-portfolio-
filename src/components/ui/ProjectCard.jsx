@@ -8,10 +8,22 @@ export const ProjectCard = ({ project }) => {
         className="h-[220px] w-full relative overflow-hidden shrink-0 flex items-center justify-center transition-transform duration-500 group-hover:scale-105"
         style={{ background: project.bgGradient }}
       >
-        {/* Placeholder Icon */}
-        <div className="text-white/20 scale-150">
-          {/* We'd render an SVG based on project.icon here dynamically, for now just a generic placeholder */}
-          <span className="text-6xl font-syne font-bold opacity-30">{project.id.toString().padStart(2, '0')}</span>
+        {/* Project Image */}
+        {project.image ? (
+          <img 
+            src={project.image} 
+            alt={project.title} 
+            className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-opacity"
+          />
+        ) : (
+          <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-b from-white/5 to-transparent">
+            {/* Fallback for when no image is provided */}
+          </div>
+        )}
+
+        {/* Placeholder Icon / Number Overlay */}
+        <div className="relative text-white/20 scale-150 z-10 pointer-events-none">
+          <span className="text-6xl font-syne font-bold opacity-30 select-none">{project.id.toString().padStart(2, '0')}</span>
         </div>
 
         {/* Hover Overlay */}
