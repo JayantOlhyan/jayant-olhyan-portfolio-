@@ -53,13 +53,20 @@ export const Navbar = () => {
         `}>
           
           {/* Logo / JO */}
-          <div className="flex items-center gap-3 cursor-pointer group" onClick={() => scrollTo('hero')}>
-            <div className="bg-gradient-to-br from-[#6C63FF] to-[#00F5FF] rounded-full w-9 h-9 flex items-center justify-center text-white font-outfit font-bold text-[0.9rem] group-hover:scale-110 transition-transform duration-300 shadow-[0_0_15px_rgba(108,99,255,0.4)]">
-              JO
+          <div className="flex items-center gap-4 cursor-pointer group" onClick={() => scrollTo('hero')}>
+            <div className="relative w-10 h-10 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+              <div className="absolute inset-0 bg-gradient-to-br from-[#6C63FF] to-[#00F5FF] rounded-full blur-[8px] opacity-40 group-hover:opacity-70 transition-opacity" />
+              <img 
+                src="/src/assets/branding/icon-light.png" 
+                alt="JO Icon" 
+                className="relative w-8 h-8 object-contain z-10"
+              />
             </div>
-            <span className="hidden sm:block font-pixel text-[8px] text-[#B0B8D0] group-hover:text-white transition-colors duration-300 tracking-tighter">
-              DEV_ENV
-            </span>
+            <img 
+              src="/src/assets/branding/wordmark-light.png" 
+              alt="Jayant Olhyan" 
+              className="hidden sm:block h-6 object-contain opacity-90 group-hover:opacity-100 transition-opacity"
+            />
           </div>
 
           {/* Desktop Nav Links */}

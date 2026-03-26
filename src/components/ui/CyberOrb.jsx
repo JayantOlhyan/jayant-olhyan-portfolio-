@@ -28,10 +28,19 @@ export const CyberOrb = () => {
           ]
         }}
         transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-        className="relative w-[40%] h-[40%] rounded-full bg-gradient-to-br from-[#6C63FF] to-[#00F5FF] z-10"
+        className="relative w-[40%] h-[40%] rounded-full bg-gradient-to-br from-[#6C63FF] to-[#00F5FF]/80 z-10 flex items-center justify-center p-4 overflow-hidden"
       >
+        {/* Brand Icon */}
+        <motion.img 
+          src="/src/assets/branding/icon-light.png" 
+          alt="JO Brand Icon" 
+          className="w-full h-full object-contain filter drop-shadow-[0_0_10px_rgba(255,255,255,0.5)]"
+          animate={{ rotate: [-10, 10, -10] }}
+          transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+        />
+        
         {/* Inner Glare */}
-        <div className="absolute top-1/4 left-1/4 w-1/3 h-1/3 bg-white/30 rounded-full blur-[2px]" />
+        <div className="absolute top-1/4 left-1/4 w-1/3 h-1/3 bg-white/30 rounded-full blur-[4px] pointer-events-none" />
       </motion.div>
 
       {/* Orbiting Particles */}

@@ -1,11 +1,12 @@
 import { Suspense, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { MeshDistortMaterial, Sphere, Float, MeshWobbleMaterial, OrbitControls, ContactShadows } from '@react-three/drei';
-import { Beaker, Zap, Cpu, MousePointer2 } from 'lucide-react';
+import { MeshDistortMaterial, Sphere, Float, MeshWobbleMaterial, OrbitControls, ContactShadows, useTexture, Box } from '@react-three/drei';
+import { Beaker, Zap, Cpu, MousePointer2, Shield } from 'lucide-react';
 
 const InteractiveArtifact = ({ type }) => {
   const meshRef = useRef();
+  const logoTexture = useTexture('/src/assets/branding/icon-light.png');
   
   useFrame((state) => {
     if (meshRef.current) {
@@ -29,6 +30,14 @@ const InteractiveArtifact = ({ type }) => {
     );
   }
 
+  if (type === 'brand') {
+    return (
+      <Box ref={meshRef} args={[1.5, 1.5, 1.5]} scale={1.2}>
+        <meshStandardMaterial map={logoTexture} color="#ffffff" transparent opacity={0.9} />
+      </Box>
+    );
+  }
+
   return (
     <Sphere ref={meshRef} args={[1, 100, 100]} scale={1.8}>
       <MeshWobbleMaterial
@@ -42,9 +51,10 @@ const InteractiveArtifact = ({ type }) => {
 };
 
 export const LabSection = () => {
-  const [activeTab, setActiveTab] = useState('distort');
+  const [activeTab, setActiveTab] = useState('brand');
 
   const labFeatures = [
+    { id: 'brand', title: 'Brand Monolith', desc: 'Custom identity mapped to 3D geometry', icon: <Shield size={18} /> },
     { id: 'distort', title: 'Fluid Dynamics', desc: 'Real-time vertex distortion with R3F', icon: <Zap size={18} /> },
     { id: 'wobble', title: 'Elastic UI', desc: 'Physically based material wobbling', icon: <Beaker size={18} /> },
   ];
