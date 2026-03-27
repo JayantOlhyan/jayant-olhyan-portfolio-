@@ -1,4 +1,5 @@
 import { Github, Linkedin, Instagram } from 'lucide-react';
+import { BrandLogo } from '../ui/BrandLogo';
 
 export const Footer = () => {
   return (
@@ -8,23 +9,14 @@ export const Footer = () => {
           
           {/* Column 1: Logo & Tagline */}
           <div className="flex flex-col items-center md:items-start text-center md:text-left">
-            <div className="flex items-center gap-4 mb-6 group cursor-pointer">
-              <div className="relative w-12 h-12 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#6C63FF] to-[#00F5FF] rounded-full blur-[10px] opacity-30 group-hover:opacity-60 transition-opacity" />
-                <img 
-                  src="/src/assets/branding/icon-light.png" 
-                  alt="JO Icon" 
-                  className="relative w-10 h-10 object-contain z-10"
-                />
-              </div>
-              <img 
-                src="/src/assets/branding/wordmark-light.png" 
-                alt="Jayant Olhyan" 
-                className="h-7 object-contain opacity-80 group-hover:opacity-100 transition-opacity"
-              />
+            <div className="flex items-center gap-3 mb-4">
+              <BrandLogo className="w-8 h-8" />
+              <span className="font-syne font-bold text-white tracking-widest uppercase text-sm">
+                Jayant Olhyan
+              </span>
             </div>
-            <p className="text-[#B0B8D0] italic text-sm font-inter leading-relaxed max-w-[280px]">
-              "25 Hackathons. 12 Wins. <br />Infinite Lines of Code."
+            <p className="text-[#B0B8D0] italic text-sm">
+              "25 Hackathons. 12 Wins. Infinite Lines of Code."
             </p>
           </div>
 

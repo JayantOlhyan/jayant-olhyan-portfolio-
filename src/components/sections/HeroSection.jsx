@@ -64,8 +64,8 @@ export const HeroSection = () => {
             Hi, I'm
           </motion.h2>
 
-          <motion.h1 variants={itemVariants} className="font-syne font-extrabold text-[#FFFFFF] text-[clamp(2.5rem,7vw,6.5rem)] leading-[1.1] mb-2 tracking-tight">
-             Jayant Olhyan
+          <motion.h1 variants={itemVariants} className="font-syne font-extrabold text-[#FFFFFF] text-[clamp(2.5rem,7vw,6.5rem)] leading-[1.1] mb-2 tracking-[0.1em] uppercase">
+             Jayant <span className="text-[#00F5FF]">Olhyan</span>
           </motion.h1>
 
           <motion.div variants={itemVariants} className="h-[40px] md:h-[50px] mb-6 flex items-center">

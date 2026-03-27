@@ -5,19 +5,19 @@
 @tailwind utilities;
 
 :root {
-  --bg-primary: #080810;
-  --bg-secondary: #0E0E1C;
-  --bg-card: #13132A;
-  --accent-indigo: #6C63FF;
-  --accent-cyan: #00F5FF;
-  --accent-gradient: linear-gradient(135deg, #6C63FF, #00F5FF);
+  --bg-primary: #050510;
+  --bg-secondary: #0A0A1F;
+  --bg-card: #0D0D2B;
+  --brand-navy: #0A0058;
+  --brand-cyan: #00F5FF;
+  --accent-gradient: linear-gradient(135deg, #6C63FF, var(--brand-cyan));
   --text-primary: #FFFFFF;
   --text-secondary: #B0B8D0;
   --text-muted: #6B7594;
-  --border-default: #1E1E3A;
-  --border-accent: rgba(108, 99, 255, 0.4);
-  --glow-indigo: 0 0 30px rgba(108, 99, 255, 0.4);
-  --glow-cyan: 0 0 20px rgba(0, 245, 255, 0.3);
+  --border-default: rgba(255, 255, 255, 0.1);
+  --border-accent: rgba(0, 245, 255, 0.4);
+  --glow-cyan: 0 0 30px rgba(0, 245, 255, 0.4);
+  --glow-navy: 0 0 40px rgba(10, 0, 88, 0.6);
 }
 
 html {
