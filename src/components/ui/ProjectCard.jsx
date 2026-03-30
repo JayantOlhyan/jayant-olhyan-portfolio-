@@ -13,6 +13,7 @@ export const ProjectCard = ({ project }) => {
           <img 
             src={project.image} 
             alt={project.title} 
+            loading="lazy"
             className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-opacity"
           />
         ) : (
