@@ -88,7 +88,7 @@ export const HeroSection = () => {
               View My Work
               <ArrowRight size={18} />
             </a>
-            <a href="/resume.pdf" target="_blank" className="bg-transparent border-2 border-[#6C63FF] rounded-full px-8 py-3.5 text-[#6C63FF] font-inter font-semibold text-[0.9rem] uppercase tracking-wider hover:bg-[#6C63FF] hover:text-white transition-colors flex items-center gap-2">
+            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="bg-transparent border-2 border-[#6C63FF] rounded-full px-8 py-3.5 text-[#6C63FF] font-inter font-semibold text-[0.9rem] uppercase tracking-wider hover:bg-[#6C63FF] hover:text-white transition-colors flex items-center gap-2">
               Download CV
               <Download size={18} />
             </a>
@@ -96,15 +96,16 @@ export const HeroSection = () => {
 
           <motion.div variants={itemVariants} className="flex gap-4">
             {[ 
-              { icon: Github, href: "https://github.com/JayantOlhyan" },
-              { icon: Linkedin, href: "https://linkedin.com/in/jayant-olhyan-5057292a1/" },
-              { icon: Instagram, href: "https://instagram.com/jayantolhyan/" }
+              { icon: Github, href: "https://github.com/JayantOlhyan", label: "GitHub Profile" },
+              { icon: Linkedin, href: "https://linkedin.com/in/jayant-olhyan-5057292a1/", label: "LinkedIn Profile" },
+              { icon: Instagram, href: "https://instagram.com/jayantolhyan/", label: "Instagram Profile" }
             ].map((social, idx) => (
               <a 
                 key={idx}
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label={social.label}
                 className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-[#B0B8D0] hover:border-[#6C63FF] hover:bg-[#6C63FF]/10 hover:text-white hover:-translate-y-1 transition-all"
               >
                 <social.icon size={18} />
