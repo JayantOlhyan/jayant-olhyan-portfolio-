@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Instagram, ArrowRight, Download, Bot, Trophy, GitCommit, Zap, ChevronDown } from 'lucide-react';
 import { CyberOrb } from '../ui/CyberOrb';
+import { SOCIAL_LINKS } from '../../data/constants';
 
 export const HeroSection = () => {
   const [roleIndex, setRoleIndex] = useState(0);
@@ -96,9 +97,9 @@ export const HeroSection = () => {
 
           <motion.div variants={itemVariants} className="flex gap-4">
             {[ 
-              { icon: Github, href: "https://github.com/JayantOlhyan", label: "GitHub Profile" },
-              { icon: Linkedin, href: "https://linkedin.com/in/jayant-olhyan-5057292a1/", label: "LinkedIn Profile" },
-              { icon: Instagram, href: "https://instagram.com/jayantolhyan/", label: "Instagram Profile" }
+              { icon: Github, href: SOCIAL_LINKS.github, label: "GitHub Profile" },
+              { icon: Linkedin, href: SOCIAL_LINKS.linkedin, label: "LinkedIn Profile" },
+              { icon: Instagram, href: SOCIAL_LINKS.instagram, label: "Instagram Profile" }
             ].map((social, idx) => (
               <a 
                 key={idx}

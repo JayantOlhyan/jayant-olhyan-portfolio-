@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Copy, Check, Github, Linkedin, Instagram, ArrowRight } from 'lucide-react';
 import { GradientButton } from '../ui/GradientButton';
+import { CONTACT_EMAIL, SOCIAL_LINKS } from '../../data/constants';
 
 export const ContactSection = () => {
   const [copied, setCopied] = useState(false);
@@ -10,7 +11,7 @@ export const ContactSection = () => {
   const [submitted, setSubmitted] = useState(false);
 
   const handleCopyEmail = () => {
-    navigator.clipboard.writeText('jayantolhyan@gmail.com');
+    navigator.clipboard.writeText(CONTACT_EMAIL);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -24,7 +25,7 @@ export const ContactSection = () => {
       const { name, email, message } = formData;
       const subject = encodeURIComponent(`Portfolio Contact from ${name}`);
       const body = encodeURIComponent(`${message}\n\nFrom: ${name}\nEmail: ${email}`);
-      window.location.href = `mailto:jayantolhyan@gmail.com?subject=${subject}&body=${body}`;
+      window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
       
       setIsSubmitting(false);
       setSubmitted(true);
@@ -62,7 +63,7 @@ export const ContactSection = () => {
               className="group flex items-center gap-3 bg-[#13132A] border border-[#rgba(108,99,255,0.4)] rounded-full px-6 py-3.5 hover:bg-[#1A1A3A] transition-colors mb-10 w-fit"
             >
               <span className="text-xl">📧</span>
-              <span className="font-inter font-medium text-white">jayantolhyan@gmail.com</span>
+              <span className="font-inter font-medium text-white">{CONTACT_EMAIL}</span>
               <div className="w-px h-5 bg-[#1E1E3A] mx-2"></div>
               {copied ? (
                 <Check size={18} className="text-[#00F5FF]" />
@@ -73,15 +74,15 @@ export const ContactSection = () => {
 
             {/* Social Cards */}
             <div className="flex flex-wrap gap-4">
-               <a href="https://github.com/JayantOlhyan" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" className="flex flex-col items-center justify-center gap-2 bg-[#13132A] border border-[#1E1E3A] rounded-2xl w-[100px] h-[100px] hover:-translate-y-1 hover:border-[#6C63FF]/50 transition-all duration-300">
+               <a href={SOCIAL_LINKS.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" className="flex flex-col items-center justify-center gap-2 bg-[#13132A] border border-[#1E1E3A] rounded-2xl w-[100px] h-[100px] hover:-translate-y-1 hover:border-[#6C63FF]/50 transition-all duration-300">
                  <Github size={28} className="text-white" />
                  <span className="font-inter text-xs text-[#B0B8D0]">GitHub</span>
                </a>
-               <a href="https://linkedin.com/in/jayant-olhyan-5057292a1/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" className="flex flex-col items-center justify-center gap-2 bg-[#13132A] border border-[#1E1E3A] rounded-2xl w-[100px] h-[100px] hover:-translate-y-1 hover:border-[#6C63FF]/50 transition-all duration-300">
+               <a href={SOCIAL_LINKS.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" className="flex flex-col items-center justify-center gap-2 bg-[#13132A] border border-[#1E1E3A] rounded-2xl w-[100px] h-[100px] hover:-translate-y-1 hover:border-[#6C63FF]/50 transition-all duration-300">
                  <Linkedin size={28} className="text-white" />
                  <span className="font-inter text-xs text-[#B0B8D0]">LinkedIn</span>
                </a>
-               <a href="https://instagram.com/jayantolhyan/" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile" className="flex flex-col items-center justify-center gap-2 bg-[#13132A] border border-[#1E1E3A] rounded-2xl w-[100px] h-[100px] hover:-translate-y-1 hover:border-[#6C63FF]/50 transition-all duration-300">
+               <a href={SOCIAL_LINKS.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile" className="flex flex-col items-center justify-center gap-2 bg-[#13132A] border border-[#1E1E3A] rounded-2xl w-[100px] h-[100px] hover:-translate-y-1 hover:border-[#6C63FF]/50 transition-all duration-300">
                  <Instagram size={28} className="text-white" />
                  <span className="font-inter text-xs text-[#B0B8D0]">Instagram</span>
                </a>
@@ -165,7 +166,7 @@ export const ContactSection = () => {
 
         {/* Content on top */}
         <div className="relative z-10 flex flex-col justify-center items-center text-center">
-           <a href="mailto:jayantolhyan@gmail.com">
+           <a href={`mailto:${CONTACT_EMAIL}`}>
              <GradientButton className="!px-12 !py-5 !text-[1.1rem]">
                 Hire Me Now
              </GradientButton>
