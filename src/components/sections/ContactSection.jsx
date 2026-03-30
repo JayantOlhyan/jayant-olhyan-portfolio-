@@ -73,15 +73,15 @@ export const ContactSection = () => {
 
             {/* Social Cards */}
             <div className="flex flex-wrap gap-4">
-               <a href="https://github.com/JayantOlhyan" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center justify-center gap-2 bg-[#13132A] border border-[#1E1E3A] rounded-2xl w-[100px] h-[100px] hover:-translate-y-1 hover:border-[#6C63FF]/50 transition-all duration-300">
+               <a href="https://github.com/JayantOlhyan" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" className="flex flex-col items-center justify-center gap-2 bg-[#13132A] border border-[#1E1E3A] rounded-2xl w-[100px] h-[100px] hover:-translate-y-1 hover:border-[#6C63FF]/50 transition-all duration-300">
                  <Github size={28} className="text-white" />
                  <span className="font-inter text-xs text-[#B0B8D0]">GitHub</span>
                </a>
-               <a href="https://linkedin.com/in/jayant-olhyan-5057292a1/" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center justify-center gap-2 bg-[#13132A] border border-[#1E1E3A] rounded-2xl w-[100px] h-[100px] hover:-translate-y-1 hover:border-[#6C63FF]/50 transition-all duration-300">
+               <a href="https://linkedin.com/in/jayant-olhyan-5057292a1/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" className="flex flex-col items-center justify-center gap-2 bg-[#13132A] border border-[#1E1E3A] rounded-2xl w-[100px] h-[100px] hover:-translate-y-1 hover:border-[#6C63FF]/50 transition-all duration-300">
                  <Linkedin size={28} className="text-white" />
                  <span className="font-inter text-xs text-[#B0B8D0]">LinkedIn</span>
                </a>
-               <a href="https://instagram.com/jayantolhyan/" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center justify-center gap-2 bg-[#13132A] border border-[#1E1E3A] rounded-2xl w-[100px] h-[100px] hover:-translate-y-1 hover:border-[#6C63FF]/50 transition-all duration-300">
+               <a href="https://instagram.com/jayantolhyan/" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile" className="flex flex-col items-center justify-center gap-2 bg-[#13132A] border border-[#1E1E3A] rounded-2xl w-[100px] h-[100px] hover:-translate-y-1 hover:border-[#6C63FF]/50 transition-all duration-300">
                  <Instagram size={28} className="text-white" />
                  <span className="font-inter text-xs text-[#B0B8D0]">Instagram</span>
                </a>
