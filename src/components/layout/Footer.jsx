@@ -41,14 +41,17 @@ export const Footer = () => {
             <h4 className="text-white font-syne font-bold mb-2 tracking-wider">CONNECT</h4>
             <div className="flex gap-4">
               <a href="https://github.com/JayantOlhyan" target="_blank" rel="noopener noreferrer" 
+                aria-label="GitHub Profile"
                 className="w-10 h-10 rounded-full border border-[#1E1E3A] flex items-center justify-center text-[#B0B8D0] hover:text-white hover:border-[#6C63FF] hover:bg-[#6C63FF]/10 transition-all">
                 <Github size={20} />
               </a>
               <a href="https://linkedin.com/in/jayant-olhyan-5057292a1/" target="_blank" rel="noopener noreferrer" 
+                aria-label="LinkedIn Profile"
                 className="w-10 h-10 rounded-full border border-[#1E1E3A] flex items-center justify-center text-[#B0B8D0] hover:text-white hover:border-[#6C63FF] hover:bg-[#6C63FF]/10 transition-all">
                 <Linkedin size={20} />
               </a>
               <a href="https://instagram.com/jayantolhyan/" target="_blank" rel="noopener noreferrer" 
+                aria-label="Instagram Profile"
                 className="w-10 h-10 rounded-full border border-[#1E1E3A] flex items-center justify-center text-[#B0B8D0] hover:text-white hover:border-[#6C63FF] hover:bg-[#6C63FF]/10 transition-all">
                 <Instagram size={20} />
               </a>
