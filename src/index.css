@@ -73,5 +73,44 @@ a, button, input, textarea, .interactive {
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--accent-indigo);
+  background: var(--brand-cyan);
+}
+
+/* Terminal Animations */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.terminal-caret {
+  display: inline-block;
+  width: 8px;
+  height: 1.2em;
+  background: var(--brand-cyan);
+  margin-left: 4px;
+  animation: blink 1s step-end infinite;
+  vertical-align: middle;
+}
+
+.glow-card {
+  box-shadow: 0 0 20px rgba(108, 99, 255, 0.15);
+  transition: box-shadow 0.3s ease;
+}
+
+.glow-card:hover {
+  box-shadow: 0 0 40px rgba(0, 245, 255, 0.3);
+}
+
+/* Glassmorphism */
+.glass-morphism {
+  background: rgba(13,13,43, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255, 0.05);
+}
+
+.glass-morphism-cyan {
+  background: rgba(0, 245, 255, 0.03);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(0, 245, 255, 0.1);
 }
