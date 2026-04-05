@@ -60,7 +60,7 @@ export const Footer = () => {
           
         </div>
 
-        {/* Copyright */}
+        {/* Copyright Sync */}
         <div className="mt-16 pt-8 border-t border-[#1E1E3A] text-center">
           <p className="text-[#6B7594] text-sm">
             © 2026 Jayant Olhyan. Built with ⚡ React & Tailwind CSS.
