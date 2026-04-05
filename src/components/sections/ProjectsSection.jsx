@@ -11,6 +11,7 @@ export const ProjectsSection = () => {
   
   const categories = ['All', 'AI/ML', 'Full Stack', 'React', 'Python'];
 
+  // Category filtering logic
   const filteredProjects = filter === 'All' 
     ? projects 
     : projects.filter(p => p.categories.includes(filter) || p.techTags.some(t => t.includes(filter)));
