@@ -27,7 +27,7 @@ export const ExperienceSection = () => {
           </h2>
         </motion.div>
 
-        {/* Timeline Container */}
+        {/* Experience Timeline */}
         <div className="relative max-w-4xl mx-auto">
           {/* Vertical Center Line (Desktop) & Left Line (Mobile) */}
           <div className="absolute left-[7px] md:left-1/2 top-4 bottom-4 w-0.5 bg-gradient-to-b from-transparent via-[#1E1E3A] to-transparent transform md:-translate-x-1/2 z-0" />
