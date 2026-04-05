@@ -4,6 +4,7 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  // Tailwind CSS Theme Configuration
   theme: {
     extend: {
       colors: {
