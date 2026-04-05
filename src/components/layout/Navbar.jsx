@@ -3,6 +3,7 @@ import { Menu, X } from 'lucide-react';
 import { useScrollSpy } from '../../hooks/useScrollSpy';
 import { BrandLogo } from '../ui/BrandLogo';
 
+// Primary Navigation Component
 export const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
