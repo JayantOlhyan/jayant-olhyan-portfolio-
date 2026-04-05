@@ -17,6 +17,7 @@ export const ContactSection = () => {
   };
 
   const handleFormSubmit = (e) => {
+    // Prevent default form behavior
     e.preventDefault();
     setIsSubmitting(true);
     
