@@ -1,3 +1,7 @@
+/** 
+ * Projects Data
+ * Array of featured project objects for the portfolio
+ */
 export const projects = [
   {
     id: 1,
