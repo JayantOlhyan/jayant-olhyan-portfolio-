@@ -20,6 +20,8 @@
   --glow-navy: 0 0 40px rgba(10, 0, 88, 0.6);
 }
 
+/* Base Styles */
+
 html {
   scroll-behavior: smooth;
 }
