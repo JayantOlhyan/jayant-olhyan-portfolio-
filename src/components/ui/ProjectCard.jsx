@@ -27,7 +27,7 @@ export const ProjectCard = ({ project }) => {
           <span className="text-6xl font-syne font-bold opacity-30 select-none">{project.id.toString().padStart(2, '0')}</span>
         </div>
 
-        {/* Hover Overlay */}
+        {/* Interactive Hover Actions */}
         <div className="absolute inset-0 bg-[#080810]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
           {project.liveUrl && (
             <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" 
