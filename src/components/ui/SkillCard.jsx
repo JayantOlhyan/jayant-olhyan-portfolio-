@@ -20,6 +20,7 @@ export const SkillCard = ({ skill }) => {
           {skill.description}
         </p>
         
+        {/* Technology Badges */}
         <div className="flex flex-wrap gap-2">
           {skill.technologies.map((tech) => (
             <span key={tech} className="bg-[#6C63FF]/10 border border-[#6C63FF]/30 rounded-md px-2.5 py-1 font-mono text-[0.75rem] text-[#6C63FF] hover:bg-[#6C63FF]/20 hover:scale-105 transition-all">
