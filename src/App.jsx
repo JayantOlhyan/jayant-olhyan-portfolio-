@@ -17,6 +17,7 @@ import { SpaceBackground } from './components/ui/SpaceBackground';
 import { ParticleBackground } from './components/ui/ParticleBackground';
 import { Scroll3DScene } from './components/ui/Scroll3DScene';
 
+/* Main Application UI */
 function App() {
   return (
     <div className="bg-[#050508] min-h-screen selection:bg-[#6C63FF]/30">
