@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { LoopLogo } from './LoopLogo';
 
+// Custom Brand Logo Component
 export const BrandLogo = ({ className = "w-10 h-10", showText = false }) => {
   return (
     <div className={`flex items-center gap-3 group ${className}`}>
