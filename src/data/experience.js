@@ -1,3 +1,7 @@
+/**
+ * Experience & Education Data
+ * Array of timeline objects for the portfolio
+ */
 export const experience = [
   {
     id: 1,
