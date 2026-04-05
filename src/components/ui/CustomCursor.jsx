@@ -18,6 +18,7 @@ export const CustomCursor = () => {
   const auraX = useSpring(mouseX, { damping: 25, stiffness: 200, mass: 0.6 });
   const auraY = useSpring(mouseY, { damping: 25, stiffness: 200, mass: 0.6 });
 
+  // Event handlers for cursor interaction
   useEffect(() => {
     if (window.matchMedia('(pointer: coarse)').matches) {
       setIsMobile(true);
