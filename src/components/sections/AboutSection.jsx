@@ -57,7 +57,9 @@ const StatCard = ({ icon: Icon, label, value, delay, color }) => (
   </motion.div>
 );
 
+// About Section Component with Interactive 3D Card
 export const AboutSection = () => {
+  // Motion values for interactive 3D effect
   const x = useMotionValue(0);
   const y = useMotionValue(0);
 
