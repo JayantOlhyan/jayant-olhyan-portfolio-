@@ -4,7 +4,9 @@ import { Github, Linkedin, Instagram, ArrowRight, Download, Bot, Trophy, GitComm
 import { CyberOrb } from '../ui/CyberOrb';
 import { SOCIAL_LINKS } from '../../data/constants';
 
+// Hero Section Component
 export const HeroSection = () => {
+  // Role rotation state
   const [roleIndex, setRoleIndex] = useState(0);
 
   const roles = [
