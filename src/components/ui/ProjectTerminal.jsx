@@ -33,6 +33,7 @@ export const ProjectTerminal = ({ children, title = "PROJECT_PREVIEW.EXE", gradi
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
     >
+      {/* Interactive 3D Terminal Shell */}
       <motion.div
         style={{
           rotateX,
