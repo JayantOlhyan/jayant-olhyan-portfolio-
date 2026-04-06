@@ -41,6 +41,7 @@ const InteractiveArtifact = ({ type }) => {
   );
 };
 
+// Experimental Lab Section with 3D interactions
 export const LabSection = () => {
   const [activeTab, setActiveTab] = useState('distort');
 
