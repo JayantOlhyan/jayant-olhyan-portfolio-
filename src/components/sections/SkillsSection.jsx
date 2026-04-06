@@ -41,7 +41,7 @@ export const SkillsSection = () => {
           </h2>
         </motion.div>
 
-        {/* Skills Grid */}
+        {/* Skill Card Grid Layout */}
         <motion.div 
           variants={containerVariants}
           initial="hidden"
