@@ -1,3 +1,4 @@
+// Custom Gradient Button with hover effects
 export const GradientButton = ({ children, onClick, className = '' }) => {
   return (
     <button
