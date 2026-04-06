@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
+// Loop Logo Component with SVG animations and glow
 export const LoopLogo = ({ size = "40px", className = "" }) => {
   return (
     <div className={`relative flex items-center justify-center ${className}`} style={{ width: size, height: size }}>
