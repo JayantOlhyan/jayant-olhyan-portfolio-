@@ -7,6 +7,7 @@ export const TimelineItem = ({ item, index }) => {
     <div className={`relative flex items-center justify-between md:justify-normal w-full mb-12 last:mb-0 ${isEven ? 'md:flex-row-reverse' : ''}`}>
       
       {/* Center timeline marker */}
+      {/* Center timeline marker & focal point */}
       <div className="absolute left-0 md:left-1/2 w-4 h-4 bg-gradient-to-br from-[#6C63FF] to-[#00F5FF] rounded-full transform md:-translate-x-1/2 -translate-x-[7px] shadow-[0_0_15px_rgba(108,99,255,0.5)] z-10" />
 
       {/* Spacing for layout */}
