@@ -1,6 +1,7 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useMemo } from 'react';
 
+// Parallax Space/Star Background Layer
 export const SpaceBackground = () => {
   const { scrollY } = useScroll();
 
