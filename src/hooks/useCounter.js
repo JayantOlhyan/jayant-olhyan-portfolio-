@@ -32,6 +32,7 @@ export const useCounter = (end, duration = 2000, isVisible = false) => {
 
     frameId = requestAnimationFrame(animate);
 
+    // Cleanup animation frame on unmount or visibility change
     return () => cancelAnimationFrame(frameId);
   }, [isVisible, end, duration]);
 
