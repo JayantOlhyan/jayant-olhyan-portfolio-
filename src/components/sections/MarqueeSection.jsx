@@ -1,3 +1,4 @@
+// Marquee animation for scrolling skills and highlights
 export const MarqueeSection = () => {
   const items = [
     'React Developer', 'AI-First Builder', 'Hackathon Champion',
