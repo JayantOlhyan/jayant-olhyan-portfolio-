@@ -21,7 +21,8 @@ export const useScrollSpy = (ids, offset = 100) => {
     };
 
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Check immediately on mount
+    // Initial check for active section on mount
+    handleScroll(); 
 
     return () => window.removeEventListener('scroll', handleScroll);
   }, [ids, offset]);
