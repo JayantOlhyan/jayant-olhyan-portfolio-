@@ -14,6 +14,7 @@ const Scene = () => {
     // We use document.body as the overall trigger so the animation maps
     // to the total scroll progress of the page.
     const tl = gsap.timeline({
+      // Scroll-linked 3D object transformations
       scrollTrigger: {
         trigger: document.body,
         start: 'top top',
