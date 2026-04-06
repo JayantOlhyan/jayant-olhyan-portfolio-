@@ -9,6 +9,7 @@ export const StatsSection = () => {
     { end: 5, suffix: '+', label: 'Live Products Deployed', color: 'white', icon: Rocket },
   ];
 
+  // Render statistical highlights
   return (
     <section className="py-20 bg-gradient-to-t from-[#0E0E1C] to-[#080810] relative overflow-hidden">
       
