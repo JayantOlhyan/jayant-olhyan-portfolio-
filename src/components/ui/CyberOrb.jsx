@@ -34,7 +34,7 @@ export const CyberOrb = () => {
         <div className="absolute top-1/4 left-1/4 w-1/3 h-1/3 bg-white/30 rounded-full blur-[2px]" />
       </motion.div>
 
-      {/* Orbiting Particles */}
+      {/* Orbiting Particles & Satellites */}
       {[...Array(3)].map((_, i) => (
         <motion.div
           key={i}
