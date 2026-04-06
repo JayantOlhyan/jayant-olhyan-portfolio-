@@ -35,6 +35,7 @@ export const TechStackSection = () => {
           </h2>
         </motion.div>
         
+        {/* Grid of technologies and tools */}
         <motion.div 
           variants={containerVariants}
           initial="hidden"
