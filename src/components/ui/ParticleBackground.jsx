@@ -13,6 +13,7 @@ export const ParticleBackground = () => {
     });
   }, []);
 
+  // Configuration for interactive particle background
   const options = useMemo(
     () => ({
       fpsLimit: 120,
