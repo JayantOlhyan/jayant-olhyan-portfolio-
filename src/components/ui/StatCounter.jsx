@@ -2,7 +2,8 @@ import { useCounter } from '../../hooks/useCounter';
 import { useInView } from 'react-intersection-observer';
 
 export const StatCounter = ({ end, label, icon: Icon, color, suffix = '' }) => {
-  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.5 });
+  const { ref, inView = false } = useInView({ triggerOnce: true, threshold: 0.5 });
+  // Animating statistics on viewport entry
   const count = useCounter(inView ? end : 0, 2000, inView);
 
   return (
